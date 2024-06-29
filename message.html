@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+    <html lang="en">
+<head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container" style="height: 60px;">
+            <a class="logo"> <img src="assets/logokyta.png" alt="" width="40px" height="40px"></a> 
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"><i class="fa fa-bars"></i></span></label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">About</a></li>
+                <li><a href="portofolio.html">Portofolio</a></li>
+                <li><a href="#messages">Message</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- content -->
+    <main>                                                                                                                                                    
+        <section id="messages">
+            <div class="container">
+                <div class="message">
+                    <h1>Message Us</h1>
+                    <div class="message-container">
+                        <!-- Form -->
+                        <div class="form">
+                            <form name="message-form" onsubmit="return validateForm()">
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="nama">Nama</label>
+                                    </div>
+                                    <span>:</span>
+                                    <div class="col-75">
+                                        <input type="text" name="full-name" id="nama" placeholder="Masukkan Nama Anda">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="tanggal">Tanggal Lahir</label>
+                                    </div>
+                                    <span>:</span>
+                                    <div class="col-75">
+                                        <input type="date" name="birth-date" id="tanggal">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="jenis_kelamin">Jenis Kelamin</label>
+                                    </div>
+                                    <span>:</span>
+                                    <div class="col-75">
+                                        <input type="radio" name="gender" id="Male" value="laki-laki">Laki - laki
+                                        <input type="radio" name="gender" id="Female" value="perempuan">Perempuan
+                                    </div>
+                                </div>
+                                <div class="row" style="display: flex; align-items: flex-start;">
+                                    <div class="col-25">
+                                        <label for="pesan">Pesan</label>
+                                    </div>
+                                    <span style="padding: 5px;">:</span>
+                                    <div class="col-75">
+                                        <textarea name="messages" id="Pesan" placeholder="Masukkan Pesan Anda"></textarea>
+                                    </div>
+                                </div>
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                        <!-- Table -->
+                        <div class="table">
+                            <div class="table-container">
+                                <div class="row">
+                                    <div class="col-25">
+                                        <p>Curent Time</p>
+                                    </div>
+                                    <span>:</span>
+                                    <div class="col-75">
+                                        <p id="current-date"></p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <p>Nama</p>
+                                    </div>
+                                    <span>:</span>
+                                    <div class="col-75">
+                                        <p id="sender-full-name"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <p>Tanggal Lahir</p>
+                                    </div>
+                                    <span>:</span>
+                                    <div class="col-75">
+                                        <p id="sender-birth-date"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <p>Jenis Kelamin</p>
+                                    </div>
+                                    <span>:</span>
+                                    <div class="col-75">
+                                        <p id="sender-gender"></p>
+                                    </div>
+                                </div>
+                                <div class="row" style="display: flex; align-items: flex-start;">
+                                    <div class="col-25">
+                                        <p>Pesan</p>
+                                    </div>
+                                    <span>:</span>
+                                    <div class="col-75">
+                                        <p id="sender-messages"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="col-md-40">
+                <a class="logo"> <img
+                src="assets/logokyta.png"alt="" width="50px" height="50px">
+                </a>
+                </div>
+                <p style="color: white; font-size: 16px;">
+                    PT Sumberjaya KTC Indonesia</p>
+                <img src="assets/logoptktc.png"
+                    alt="" class="logo" width="40px" height="40px">
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/message.js"> </script>
+</html>

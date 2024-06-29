@@ -1,0 +1,380 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+    width: 100%;
+    border: 2px solid #000000;
+    max-width: 1366px;
+    margin: auto;
+}
+
+/* header */
+
+a {
+    color: #FFFFFF;
+}
+
+/* header */
+
+.header .container {
+    position: fixed;
+    background-color: #000000;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.5);
+    top: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  
+}
+
+.header li {
+    float: left;
+    border-right: 1px solid #FFFFFF;
+}
+
+.header li a {
+    display: block;
+    border-right: 1px solid #FFFFFF;
+    text-decoration: none;
+    padding: 20px 30px;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+    background-color: #FF0000;
+}
+
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 20fr;
+    padding: 10px 20px;
+}
+
+/* menu */
+
+.header .menu {
+    max-height: 0;
+    clear: none;
+    float: right;
+    max-height: none;
+    }
+
+/* menu icon */
+
+.header .menu-icon {
+    display: none;
+    float: right;
+    padding: 15px 15px;
+    position: sticky;
+    user-select: none;
+    border: 1px solid #000;
+    margin: 5px;
+    border-radius: 10%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked~.menu-icon {
+    background-color: #000000;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon {
+    color: #FF0000;
+}
+
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+top: 0;
+}
+
+
+
+/* content */
+main {
+    margin-top: 60px;
+}
+
+h1 {
+    padding: 20px 0px;
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 24px;
+}
+
+p {
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+/* banner */
+#banner .container {
+    background-color: #FFFFFF;
+
+}
+
+#banner h1 {
+color: #000000;
+float: left;
+font-size: 20fr;
+padding: 10px 20px;
+}
+
+#banner p {
+    color: #000000;
+}
+
+.banner-title {
+margin: 0px 100px;
+}
+
+#banner img {
+padding: 10px 0px;
+width: 100%;
+height: 576px;
+}
+
+/* headquarter */
+#headquarters .container {
+    background-color: #FF0000;
+    padding: 10px 0px;
+}
+
+.headquarter {
+    margin: 0px 100px;
+}
+
+.headquarter h1 {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.headquarter-image {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.head-image {
+    color: #FFFFFF;
+    padding: 5px;
+    text-align: center;
+}
+
+.head-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding-bottom: 5px;
+}
+
+/* message us */
+#messages .container {
+    padding: 50px 0px;
+    background-color: #FFFFFF;
+}
+
+.message {
+    margin: 0px 100px;
+
+}
+
+.message h1 {
+    color: #FF0000;
+}
+
+.message-container {
+    display: grid;
+    justify-content: center;
+    margin: 20px auto;
+    grid-gap: 30px;
+    border-radius: 20px;
+    padding: 20px 0px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form {
+    background-color: #FF0000;
+    border-radius: 30px;
+    padding: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    width: 500px;
+}
+
+.row {
+    color: #FFFFFF;
+    content: "";
+    display: table;
+    clear: both;
+    display: flex;
+    align-items: center;
+}
+
+
+.col-25 {
+    float: left;
+    width: 30%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 70%;
+    margin-top: 6px;
+}
+
+span {
+    padding: 0px 5px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=text]::placeholder {
+    font-size: 18px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+input[type=submit] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #fff;
+    font-weight: 700;
+}
+
+input[type=submit]:hover {
+    background-color: #000000;
+}
+
+.table {
+    background-color: #FF0000;
+    border-radius: 30px;
+    padding: 30px;
+    font-size: 18px;
+    width: 500px;
+}
+
+.table-container {
+    padding: 70px 0px;
+}
+
+/* footer */
+.col-md-40 {
+    float: left;
+    width: 100%;
+    padding: 10px 20px;   
+}
+.footer-container {
+    background-color: #000000;
+    padding: 10px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+.footer-container .img {
+    width: 40px;
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+    <html lang="en">
+<head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container" style="height: 60px;">
+            <a class="logo"> <img src="assets/logokyta.png" alt="" width="40px" height="40px"></a> 
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"><i class="fa fa-bars"></i></span></label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">About</a></li>
+                <li><a href="portofolio.html">Portofolio</a></li>
+                <li><a href="#messages">Message</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- content -->
+    <main>
+        <!-- banner section -->
+        <section id="banner">
+            <div class="container">
+                <div class="banner">
+                    <h1 class="banner-tittle"> Hi <span id="nama"></span>, Welcome To KYTA Website</h1>
+                    <marquee behavior="" direction="">
+                    <p>Selamat datang di website kami! PT Sumberjaya KTC Indonesia adalah salah satu perusahaan distributor terkemuka
+                    di industri sepeda motor di Indonesia. Target kami adalah terus menjaga kualitas produk
+                    kami, dan juga memperkenalkan inovasi baru kepada pelanggan di seluruh tanah air.
+                    Hingga saat ini kami telah memiliki agen di berbagai provinsi di seluruh Indonesia, dan kami siap memberikan
+                    yang terbaik untuk Anda.</p>
+                    </marquee>
+                </div>
+                <div>
+                    <img src="assets/kyta store.jpg"
+                        alt="banner-img" class="img-slideshow" />
+                    <img src="assets/tokoonlinekyta.jpeg"
+                        alt="banner-img" class="img-slideshow" />
+                    <img src="https://imgx.gridoto.com/crop/0x0:0x0/700x465/photo/2023/01/29/whatsapp-image-2023-01-29-at-20-20230129081809.jpeg"
+                        alt="banner-img" class="img-slideshow" />
+                </div>
+            </div>
+        </section>
+        <!-- headquarter section -->
+        <section id="headquarters">
+            <div class="container">
+                <div class="headquarter">
+                    <h1>Our Headquarter</h1>
+                    <div class="headquarter-image">
+                        <div class="head-image">
+                            <img src="https://c4.wallpaperflare.com/wallpaper/615/502/425/cities-jakarta-indonesia-java-indonesia-wallpaper-preview.jpg"
+                                alt="jakarta">
+                            <p>Jakarta</p>
+                        </div>
+                        <div class="head-image">
+                            <img src="https://travellingindonesia.com/wp-content/uploads/2022/06/Istana-Maimun-Dok.-Disbudpar0ASumut.jpg"
+                                alt="medan">
+                            <p>Medan</p>
+                        </div>
+                        <div class="head-image">
+                            <img src="https://ikbis.ac.id/wp-content/uploads/2021/03/Anda-di-Surabaya-Inilah-Pentingnya-Menggunakan-Konsultan-Pajak-Surabaya-1024x681.jpg"
+                                alt="surabaya">
+                            <p>Surabaya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="messages">
+            <div class="container">
+                <div class="message">
+                    <h1>Message Us</h1>
+                    <div class="message-container">
+                        <!-- Form -->
+                        <div class="form">
+                            <form name="message-form" onsubmit="return validateForm()">
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="nama">Nama</label>
+                                    </div>
+                                    <span>:</span>
+                                    <div class="col-75">
+                                        <input type="text" name="full-name" id="nama" placeholder="Masukkan Nama Anda">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="tanggal">Tanggal Lahir</label>
+                                    </div>
+                                    <span>:</span>
+                                    <div class="col-75">
+                                        <input type="date" name="birth-date" id="tanggal">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="jenis_kelamin">Jenis Kelamin</label>
+                                    </div>
+                                    <span>:</span>
+                                    <div class="col-75">
+                                        <input type="radio" name="gender" id="Male" value="laki-laki">Laki - laki
+                                        <input type="radio" name="gender" id="Female" value="perempuan">Perempuan
+                                    </div>
+                                </div>
+                                <div class="row" style="display: flex; align-items: flex-start;">
+                                    <div class="col-25">
+                                        <label for="pesan">Pesan</label>
+                                    </div>
+                                    <span style="padding: 5px;">:</span>
+                                    <div class="col-75">
+                                        <textarea name="messages" id="Pesan" placeholder="Masukkan Pesan Anda"></textarea>
+                                    </div>
+                                </div>
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                        <!-- Table -->
+                        <div class="table">
+                            <div class="table-container">
+                                <div class="row">
+                                    <div class="col-25">
+                                        <p>Curent Time</p>
+                                    </div>
+                                    <span>:</span>
+                                    <div class="col-75">
+                                        <p id="current-date"></p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <p>Nama</p>
+                                    </div>
+                                    <span>:</span>
+                                    <div class="col-75">
+                                        <p id="sender-full-name"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <p>Tanggal Lahir</p>
+                                    </div>
+                                    <span>:</span>
+                                    <div class="col-75">
+                                        <p id="sender-birth-date"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <p>Jenis Kelamin</p>
+                                    </div>
+                                    <span>:</span>
+                                    <div class="col-75">
+                                        <p id="sender-gender"></p>
+                                    </div>
+                                </div>
+                                <div class="row" style="display: flex; align-items: flex-start;">
+                                    <div class="col-25">
+                                        <p>Pesan</p>
+                                    </div>
+                                    <span>:</span>
+                                    <div class="col-75">
+                                        <p id="sender-messages"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="col-md-40">
+                <a class="logo"> <img
+                src="assets/logokyta.png"alt="" width="50px" height="50px">
+                </a>
+                </div>
+                <p style="color: white; font-size: 16px;">
+                    PT Sumberjaya KTC Indonesia</p>
+                <img src="assets/logoptktc.png"
+                    alt="" class="logo" width="40px" height="40px">
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/script.js"> </script>
+</html>
